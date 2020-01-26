@@ -1,0 +1,34 @@
+# Check if python is installed
+python --version
+
+# Check if pip is installed
+pip --version
+
+# List all installed packages
+pip freeze
+
+# If list does not include virtualenv then install it
+pip install virtualenv
+
+# Created a directory for your project
+mkdir project_name
+
+# Move to the project directory
+cd project_name
+
+# Setup new venv if not exists for new project
+python -m virtualenv venv_name
+
+# Activate venv
+venv_name\Scripts\activate
+
+# Ouput of above command should look similar to this
+(venv_name) C:\Users\Username\Projects\project_name>
+
+# Install Flask in the current venv
+pip install Flask
+
+# Verify using 
+pip freeze
+
+#All setup ready for development
